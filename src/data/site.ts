@@ -1,9 +1,7 @@
 import kids from "@/assets/kids.webp";
 import students from "@/assets/students.webp";
 import seniors from "@/assets/seniors.webp";
-import logoAsset from "@/assets/mamba-silver-logo.png.asset.json";
-
-export const LOGO = logoAsset.url;
+export const LOGO = "/mamba-silver-logo.png";
 export const INSTAGRAM = "https://www.instagram.com/mamba_combat/";
 export const ADDRESS =
   "98, 4th Cross, Bannerghatta Rd, Shanbhog Nagappa Layout, Bilekahalli, Bengaluru, Karnataka 560076";
