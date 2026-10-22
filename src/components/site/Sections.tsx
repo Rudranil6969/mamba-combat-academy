@@ -3,7 +3,7 @@ import { ArrowRight, CheckCircle2, ChevronDown, Clock, Dumbbell, Flame, Moon, Pa
 import hero from "@/assets/hero.webp";
 import heroMobile from "@/assets/hero-mobile.webp";
 import introVideo from "@/assets/intro.mp4.asset.json";
-import logoAsset from "@/assets/mamba-silver-logo.png.asset.json";
+import { LOGO } from "@/data/site";
 
 export function LogoMarquee() {
   const items = Array.from({ length: 12 });
@@ -12,7 +12,7 @@ export function LogoMarquee() {
       <div className="marquee-track flex w-max items-center gap-12">
         {[...items, ...items].map((_, i) => (
           <div key={i} className="flex shrink-0 items-center gap-4" aria-hidden={i >= items.length}>
-            <img src={logoAsset.url} alt={i === 0 ? "Mamba Combat Academy logo" : ""} width={56} height={56} loading="lazy" className="h-14 w-14 rounded-full object-cover ring-1 ring-primary/40" />
+            <img src={LOGO} alt={i === 0 ? "Mamba Combat Academy logo" : ""} width={56} height={56} loading="lazy" className="h-14 w-14 rounded-full object-cover ring-1 ring-primary/40" />
             <span className="text-xl font-extrabold tracking-widest uppercase">Mamba <span className="text-gradient">Combat Academy</span></span>
           </div>
         ))}
